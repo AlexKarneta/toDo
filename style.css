@@ -1,0 +1,78 @@
+* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("/toDo/src/img/pexels-tirachard-kumtanom-733852.jpg")center center/cover no-repeat;
+}
+#add-task-container{
+	width: 350px;
+	padding: 20px 10px;	
+	display: flex;
+	margin-bottom: 10px;
+}
+input{
+	flex:7;
+	margin: 0 10px 0 0;
+	font-size: 1rem;
+	padding: 5px;
+	border-radius: 5px;
+}
+#add-task{
+	transition: .3s;
+	font-size: 1.5rem;
+	padding: 5px;
+	flex:1;
+	border: solid 1px ;
+	border-radius: 5px;
+}
+#add-task:hover{
+	background-color: green;
+	color: #f3f4f6;
+}
+.task{
+	width: 100%;
+	display: flex;
+	margin-bottom: 5px;
+	justify-content: space-between;
+}
+.task li {
+	list-style: none;
+	flex:4;
+	padding: 5px;
+	font-size: 1.5rem;
+	margin: 10px;
+}
+.task button{
+	flex:1;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.task .checkTask{
+	color: green;
+	margin-right: 5px;
+	border: solid 1px;
+	font-size: 1.5rem;
+}
+.task .deleteTask{
+	color: red;
+	margin-right: 5px;
+	border: solid 1px;
+	font-size: 1.5rem;
+}
+.task .deleteTask:hover{
+	color:#f3f4f6;
+	background-color: red;
+}
+.task .checkTask:hover{
+	color: #f3f4f6;
+	background-color: green;
+}
+.smth{
+	text-decoration: line-through;
+}
